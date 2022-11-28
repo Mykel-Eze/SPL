@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#062240">
+    <meta http-equiv="cache-control" content="no-cache" />
+
+    <!-- browser cache control -->
+    <meta http-equiv="cache-control" content="max-age=0">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="-1">
+	<meta http-equiv="expires" content="Tue, 01 Jan 1980 11:00:00 GMT">
+	<meta http-equiv="pragma" content="no-cache">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="inC4QKLT9eYm6VooJ3l0AincMU9eexThhoXX9TeC">
+
+    <title>SPL Career</title>
+	<meta name="keyword" content="SPL, Samon Petroleum, Samon Petroleum Limited">
+	<meta name="author" content="Samon Petroleum Limited">
+	<meta name="description" content="Samon Petroleum, a fast-growing energy industrial leader">
+    <link rel="shortcut icon" href=" img/logo2.png">
+
+     <!-- StyleSheets -->
+    <link rel="stylesheet" href="css/fonts.css"> 
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css?v=1.2">
+    <link rel="stylesheet" href="css/inner.css?v=1.5">
+
+    <style>
+        .home-bg{
+            background-image: url(img/career-bg.jpg);
+        }
+        .career-point .header-txt {
+            letter-spacing: 2px;
+        }
+        .career-point hr {
+            margin-top: 10px;
+            width: 100px;
+            border-top: 1.5px solid;
+            margin-left: 0;
+        }
+        .career-point {
+            display: flex;
+            margin: 30px 0;
+        }
+        .icon-img {
+            margin-right: 30px;
+        }
+        #form-sec h2{
+            font-family: var(--font-lite);
+            margin: 0;
+        }
+        #form-sec input.form-control {
+            height: 50px;
+            border-radius: 30px;
+            padding: 10px 12px;
+            text-align: center;
+        }
+        .upload-btn-wrapper {
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            width: 100%;
+        }
+        .upload-btn-wrapper .btn {
+            border: 1px solid #ccc;
+            color: gray;
+            background-color: white;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 16px;
+            width: 100%;
+            height: 50px;
+        }
+        .upload-btn-wrapper input[type=file] {
+            font-size: 100px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+        }
+        #form-sec form {
+            margin-bottom: 40px;
+        }
+        button.submit-btn {
+            color: white;
+            border: none;
+            background: var(--pry-color);
+            padding: 15px 55px;
+            border-radius: 30px;
+            margin-top: 20px;
+            outline: none;
+        }
+        .toast-success-alert {
+            width: auto;
+            background: rgba(0,100,0, 0.9);
+            right: 5px;
+            text-align: center;
+            float: left;
+            position: fixed;
+            top: 60px;
+            border-radius: 8px;
+            z-index: 100;
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!--=== Menu ===-->
+    <nav class="navbar navbar-blue navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
+                </button>
+                <a class="navbar-brand" href="/"><img src="img/logo.png" alt="Logo"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right ">
+                    <li><a href="/#what-we-do">What We Do</a></li>
+                    <li><a href="/#what-we-value">What We Value</a></li>
+                    <li><a href="/#what-next">What Next</a></li>
+                    <li><a href="/#ourstory">Our Story</a></li>
+                    <li class="hidden-xs"><a class="open-hidden-nav">
+                        <img src="img/menu.svg" alt="menu" class="hid1">
+                        <img src="img/menu2.svg" alt="menu" class="hid2">
+                    </a></li>
+                </ul>
+            </div> 
+            <!-- <ul class="nav navbar-nav navbar-right ">
+                <li><a class="open-hidden-nav">
+                    <img src="img/menu.svg" alt="menu">
+                </a></li>
+            </ul>                                                                                                                                                                       -->
+        </div>
+    </nav>
+    <!--=== end of Menu ===-->
+
+    <!--=== Overlay Menu ===-->
+    <div class="col-xs-12" id="overlay-menu">
+        <div class="container">
+            <div class="row">
+                <div class="nav nav-action col-xs-12">
+                    <a href="#"><img src="img/logo.png" alt="SPL" class="om-logo"></a>
+                    <img src="img/close.svg" alt="X" class="om-close hover-spin">
+                </div>
+                <div class="col-xs-12 pad0 om-contents">
+                    <div class="col-xs-12 col-sm-6 col-md-5 pad0">
+                        <div class="col-xs-12">
+                            <h4 class="bold-txt">Contact</h4>
+                            <span>Samon Petroleum. Suite D29 </span> <br>
+                            <span>Plot D14A, Calabar Free Trade Zone, <br> Calabar.</span>
+                            <br>
+                            <br>
+                            <span>info@samonpetroleum.com</span>
+                            <br>
+                            <br>
+                            <span>+234 (0)806 511 2943 </span> 
+                        </div>
+                        <div class="col-xs-12 om-social">
+                            <h4 class="bold-txt">Contact</h4>
+                            <ul class="no-dots pad0-left">
+                                <li><a href="#" class="white-txt">Facebook</a></li>
+                                <li><a href="#" class="white-txt">Twitter</a></li>
+                                <li><a href="#" class="white-txt">Instagram</a></li>
+                                <li><a href="#" class="white-txt">Linkedin</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-xs-12 col-sm-6 col-md-5 pad0">
+                        <div class="col-xs-12">
+                            <ul class="no-dots pad0-left">
+                                <li>
+                                    <a href="/" class="white-txt"><h3>HOME</h3></a>
+                                </li>
+                                <li>
+                                    <a href="career" class="white-txt"><h3>CAREER</h3></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="white-txt"><h3>UPDATES</h3></a>
+                                </li>
+                                <li>
+                                    <a href="contact" class="white-txt"><h3>CONTACT</h3></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-12 om-form-div">
+                            <h4>SUBSCRIBE TO NEWSLETTER</h4>
+                            <form action="">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="enter your email to recieve updates">
+                                    <button class="subscribe-btn">Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--=== end of Overlay Menu ===-->
+
+	
+    <div>
+        <!--=== Home Section ===-->
+        <div class="col-xs-12 pad0" id="home">
+            <div class="fixed-links">
+                <ul class="list-inline">
+                    <li><a href="#" class="white-txt">FACEBOOK</a></li>
+                    <li><a href="#" class="white-txt">INSTAGRAM</a></li>
+                    <li><a href="#" class="white-txt">LINKEDIN</a></li>
+                    <li><a href="#" class="white-txt">TWITTER</a></li>
+                    <!-- <li><hr class="hr-li"></li>
+                    <li><span class="b-name">SAMON PETROLEUM</span></li> -->
+                </ul>
+            </div>
+
+            <div class="home-bg">
+                <div class="container">
+                    <h1 class="main-txt">career <hr></h1>
+                </div>
+            </div>
+        </div>
+        <!--=== end of Home Section ===-->
+
+         <!--=== Career Section===-->
+        <div class="col-xs-12" id="our-story">
+            <div class="container">
+                <div class="row">
+                    <div style="margin: 30px 0 50px;">
+                        <h2 class="header-txt">Not just a job. A career.</h2>
+                    </div>
+
+                    <div class="career-point">
+                        <div class="icon-img"><img src="img/job.svg" alt="job"></div>
+                        <div class="texts black-txt">
+                            <h5 class="header-txt">JOB OPPORTUNITIES <hr></h5>
+                            <p>
+                                Samon Petroleum offers you a great opportunity to become part of the leading trading 
+                                and products company focused on providing high-quality fuels in West Africa at 
+                                competitive prices. Over the last twenty years, SPL has imported and traded mainly gasoil 
+                                gasoline, dpk/jet A1 and all associated services.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="career-point">
+                        <div class="icon-img"><img src="img/qualify.svg" alt="qualifications"></div>
+                        <div class="texts black-txt">
+                            <h5 class="header-txt">QUALIFICATIONS AND SKILLS <hr></h5>
+                            <p>
+                                Ideal candidates are expected to have high negotiation skills, excellent communication 
+                                skills, creative marketing ideas, high energy levels and must be self-motivated.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="career-point">
+                        <div class="icon-img"><img src="img/office.svg" alt="office"></div>
+                        <div class="texts black-txt">
+                            <h5 class="header-txt">WORKING CONDITIONS <hr></h5>
+                            <p>
+                                Our environment is fast-paced with shifting priorities and numerous business changes.
+                            </p>
+                            <p>Candidates must be IT proficient.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--=== end of Career Section ===-->
+
+        <!--=== Form Section ===-->
+        <div class="col-xs-12 pad0" id="form-sec">
+            <div class="container">
+                <div class="row">
+                    <div style="margin: 30px 0 50px;" class="col-xs-12">
+                        <h2 class="gray-txt text-center">FILL IN YOUR DETAILS TO APPLY</h2>
+                    </div>
+
+                    <div class="toast-success-alert alert">
+                        Application sent successfully. Thanks for your interest.
+                    </div>
+
+                    <form action="#" class="col-xs-12 col-sm-10 col-sm-offset-1" id="careerForm">
+                        <div class="form-group col-xs-12 col-sm-6">
+                            <input type="text" class="form-control" required id="name" placeholder="Full Name">
+                        </div>
+                        <div class="form-group col-xs-12 col-sm-6">
+                            <input type="tel" class="form-control" required id="phone" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group col-xs-12 col-sm-6">
+                            <input type="email" class="form-control" required id="email" placeholder="Email Address">
+                        </div>
+                        <div class="form-group col-xs-12 col-sm-6">
+                            <div class="upload-btn-wrapper">
+                                <button class="btn" id="cv_btn">Upload CV</button>
+                                <input type="file" name="myfile" id="cv_upload" required/>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 text-center">
+                            <button type="submit" class="submit-btn" id="submit-btn">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--=== end of Career Section ===-->
+
+
+    </div>
+    
+    <!--=== Footer ===-->
+    <footer class="col-xs-12 pad0" id="footer">
+        <!-- <div class="col-sm-8 col-sm-offset-2 col-xs-12 text-center career-notice">
+            <h4>EXPLORE CAREER OPPORTUNITIES</h4>
+            <p class="">
+                As a fast-growing energy industry leader, we hire exceptional people with the passion to make a difference, 
+                to hit the ground running, take on new challenges, and generate innovative ideas with enthusiasm to succeed 
+                and grow with us. <br> <br>
+                Please e-mail your resume to <a href="mailto:careers@samonpetroleum.com">careers@samonpetroleum.com</a>
+            </p>
+            <div class="main-btn-div">
+                <button>
+                    Apply Now <span class="glyphicon glyphicon-plus bg-ed"></span>
+                </button>
+            </div>
+        </div> -->
+
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2 cttt" style="margin-bottom: 20px;">
+            <hr class="footer-hr">
+        </div>
+
+        <div class="footer container">
+            <div class="col-xs-12 col-sm-3 footer-sec">
+                <div class="col-xs-12 ">
+                    <div class="text-center">
+                        <a href="/"><img src="img/logo2.png" alt="SPL" class="footer-logo"></a> <br>
+                        <span class="dd">Samon Petroleum Limited</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-3 footer-sec">
+                <div class="col-xs-12 ">
+                    <h3>Contact</h3>
+                    <div>
+                        <b> Samon Petroleum. Plot D14A, Calabar Free Trade Zone, Calabar. </b> <br>
+                        <span><a href="mailto:info@samonpetroleum.com">info@samonpetroleum.com</a></span> <br><br>
+                        <span>
+                            <a href="tel:+2348065112943">+234 (0)806 511 2943</a> 
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-2 footer-sec">
+                <div class="col-xs-12 ">
+                    <h3>Navigation</h3>
+                    <ul class="no-dots pad0">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="career">Career</a></li>
+                        <li><a href="contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-2 footer-sec">
+                <div class="col-xs-12 ">
+                    <h3>Legal</h3>
+                    <ul class="no-dots pad0">
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-2 footer-sec">
+                <div class="col-xs-12 ">
+                    <h3>Follow Us</h3>
+                    <ul class="no-dots pad0">
+                        <li>
+                            <a href="#"> Facbook</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Instagram</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Twitter</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Linkedin</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            
+
+        </div>
+
+        <div class="col-xs-12 footer-bar">
+            <div class="col-xs-12">
+                <div class="col-xs-12 text-center" style="line-height: 4">Copyright &copy; 2019 Samon Petroleum. <span class="hidden-xs">All rights Reserved</span></div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!--=== end of Footer ===-->
+
+    <!-- Scripts-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-analytics.js"></script>
+
+     <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-storage.js"></script>
+
+
+    <script src="js/career-main.js"></script>
+
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $(".navbar-fixed-top");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+            
+            $("#cv_upload").change(function(){
+                var cv = $("#cv_upload").val().replace(/C:\\fakepath\\/i, '');
+                $("#cv_btn").text(cv);
+            })
+        });
+
+        $(document).ready(function(){
+            $('#overlay-menu').hide();
+        });
+        $('.open-hidden-nav').click(function(){
+            $('#overlay-menu').slideDown();
+        });
+        $('.om-close').click(function(){
+            $('#overlay-menu').slideUp();
+        });
+    </script>
+
+	</body>
+
+</html>
+
+</html>

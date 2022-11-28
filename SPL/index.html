@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#062240">
+    <meta http-equiv="cache-control" content="no-cache" />
+
+    <!-- browser cache control -->
+    <meta http-equiv="cache-control" content="max-age=0">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="-1">
+	<meta http-equiv="expires" content="Tue, 01 Jan 1980 11:00:00 GMT">
+	<meta http-equiv="pragma" content="no-cache">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="inC4QKLT9eYm6VooJ3l0AincMU9eexThhoXX9TeC">
+
+    <meta name="google-site-verification" content="r6aYUuPX2OyuEE8RIAscLDYTdBPm_9G7M5TvpA51Hu4" />
+
+    <title>SPL</title>
+	<meta name="keyword" content="SPL, Samon Petroleum, Samon Petroleum Limited">
+	<meta name="author" content="Samon Petroleum Limited">
+	<meta name="description" content="Samon Petroleum, a fast-growing energy industrial leader">
+    <link rel="shortcut icon" href=" img/logo2.png">
+
+     <!-- StyleSheets -->
+    <link rel="stylesheet" href="css/fonts.css"> 
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css?v=1.5.1">
+
+    <style>
+        #loader {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1;
+            border: 16px solid #fafbfc;
+            background: #fafbfc;
+            width: 100%;
+            height: 100%;
+        }
+        #loader img{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        /* Add animation to "page content" */
+        .animate-bottom {
+            position: relative;
+            -webkit-animation-name: animatebottom;
+            -webkit-animation-duration: 1s;
+            animation-name: animatebottom;
+            animation-duration: 1s
+        }
+
+        @-webkit-keyframes animatebottom {
+            from { bottom:-100px; opacity:0 } 
+            to { bottom:0px; opacity:1 }
+        }
+
+        @keyframes animatebottom { 
+            from{ bottom:-100px; opacity:0 } 
+            to{ bottom:0; opacity:1 }
+        }
+
+        #content {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body onload="loadFunction()">
+
+    <div id="loader">
+        <img src="img/loader1.gif" alt="loader"> 
+    </div>
+
+    <div id="content" class="animate-boom">
+        <!--=== Menu ===-->
+        <nav class="navbar navbar-blue navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                    <a class="navbar-brand" href="/"><img src="img/logo.png" alt="Logo"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right ">
+                        <li><a href="/#what-we-do">What We Do</a></li>
+                        <li><a href="/#what-we-value">What We Value</a></li>
+                        <li><a href="/#what-next">What Next</a></li>
+                        <li><a href="/#ourstory">Our Story</a></li>
+                        <li class="hidden-xs"><a class="open-hidden-nav">
+                            <img src="img/menu.svg" alt="menu" class="hid1">
+                            <img src="img/menu2.svg" alt="menu" class="hid2">
+                        </a></li>
+                    </ul>
+                </div> 
+                <!-- <ul class="nav navbar-nav navbar-right ">
+                    <li><a class="open-hidden-nav">
+                        <img src="img/menu.svg" alt="menu">
+                    </a></li>
+                </ul>                                                                                                                                                                       -->
+            </div>
+        </nav>
+        <!--=== end of Menu ===-->
+
+        <!--=== Overlay Menu ===-->
+        <div class="col-xs-12" id="overlay-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="nav nav-action col-xs-12">
+                        <a href="#"><img src="img/logo.png" alt="SPL" class="om-logo"></a>
+                        <img src="img/close.svg" alt="X" class="om-close hover-spin">
+                    </div>
+                    <div class="col-xs-12 pad0 om-contents">
+                        <div class="col-xs-12 col-sm-6 col-md-5 pad0">
+                            <div class="col-xs-12">
+                                <h4 class="bold-txt">Contact</h4>
+                                <span>Samon Petroleum. Suite D29 </span> <br>
+                                <span>Plot D14A, Calabar Free Trade Zone, <br> Calabar.</span>
+                                <br>
+                                <br>
+                                <span>info@samonpetroleum.com</span>
+                                <br>
+                                <br>
+                                <span>+234 (0)806 511 2943 </span> 
+                            </div>
+                            <div class="col-xs-12 om-social">
+                                <h4 class="bold-txt">Contact</h4>
+                                <ul class="no-dots pad0-left">
+                                    <li><a href="#" class="white-txt">Facebook</a></li>
+                                    <li><a href="#" class="white-txt">Twitter</a></li>
+                                    <li><a href="#" class="white-txt">Instagram</a></li>
+                                    <li><a href="#" class="white-txt">Linkedin</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div class="col-xs-12 col-sm-6 col-md-5 pad0">
+                            <div class="col-xs-12">
+                                <ul class="no-dots pad0-left">
+                                    <li>
+                                        <a href="/" class="white-txt"><h3>HOME</h3></a>
+                                    </li>
+                                    <li>
+                                        <a href="career" class="white-txt"><h3>CAREER</h3></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="white-txt"><h3>UPDATES</h3></a>
+                                    </li>
+                                    <li>
+                                        <a href="contact" class="white-txt"><h3>CONTACT</h3></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12 om-form-div">
+                                <h4>SUBSCRIBE TO NEWSLETTER</h4>
+                                <form action="">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="enter your email to recieve updates">
+                                        <button class="subscribe-btn">Subscribe</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--=== end of Overlay Menu ===-->
+
+        
+        <div>
+            <!--=== Home Section ===-->
+            <div class="col-xs-12 pad0" id="home">
+                <div class="fixed-links">
+                    <ul class="list-inline">
+                        <li><a href="#" class="white-txt">FACEBOOK</a></li>
+                        <li><a href="#" class="white-txt">INSTAGRAM</a></li>
+                        <li><a href="#" class="white-txt">LINKEDIN</a></li>
+                        <li><a href="#" class="white-txt">TWITTER</a></li>
+                        <li><hr class="hr-li"></li>
+                        <li><span class="b-name">SAMON PETROLEUM</span></li>
+                    </ul>
+                </div>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators sp">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"> </li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="desc slide-1">
+                                <div class="container">
+                                    <div class="col-sm-7 main-txt">
+                                        <h2 class="h-main-txt">
+                                            BE A LEADING TRADING AND PRODUCTS COMPANY
+                                        </h2>
+                                        <hr class="divider">
+                                        <div class="sub-main-txt">
+                                            Samon Petroleum has active interests in the trading of refined petroleum products. 
+                                            Our understanding of the local and global dynamics within the oil market enables us 
+                                            take an intelligent approach towards achieving our goals effectively.
+                                        </div>
+                                        <div class="main-btn-div">
+                                            <button onclick="window.location.href='learnmore'">
+                                                Learn More <span class="glyphicon glyphicon-plus bg-ed"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="desc slide-2">
+                                <div class="container">
+                                    <div class="col-sm-7 main-txt">
+                                        <h2 class="h-main-txt">
+                                            STORAGE
+                                        </h2>
+                                        <hr class="divider">
+                                        <div class="sub-main-txt">
+                                            Samon Petroleum Limited “SPL” solely owns a storage facility in the Southern Region of 
+                                            Nigeria- Calabar Free Trade Zone, Cross River State. The facilities have 4 steel vertical 
+                                            storage tanks are designed to the API 650 and has a capacity of approximately 50 million 
+                                            litres.
+                                        </div>
+                                        <div class="main-btn-div">
+                                            <button onclick="window.location.href='learnmore'">
+                                                Learn More <span class="glyphicon glyphicon-plus bg-ed"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="desc slide-3">
+                                <div class="container">
+                                    <div class="col-sm-7 main-txt">
+                                        <h2 class="h-main-txt">
+                                            JETTY SERVICE
+                                        </h2>
+                                        <hr class="divider">
+                                        <div class="sub-main-txt">
+                                            SPL Jetty has the capacity of berthing and discharging up to 20,000-25,000 DWT vessels. We offer 
+                                            throughput logistic and blending of businesses of various products such as LPG, Bitumen and clean 
+                                            petroleum products through an extensive pipeline networks to reach over 35 depots within and 
+                                            outside the Free Trade Zone, Calabar.
+                                        </div>
+                                        <div class="main-btn-div">
+                                            <button onclick="window.location.href='learnmore'">
+                                                Learn More <span class="glyphicon glyphicon-plus bg-ed"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="desc slide-4">
+                                <div class="container">
+                                    <div class="col-sm-7 main-txt">
+                                        <h2 class="h-main-txt">
+                                            RETAIL
+                                        </h2>
+                                        <hr class="divider">
+                                        <div class="sub-main-txt">
+                                            Over the years Samon Petroleum has been supplying quality fuel products to 
+                                            end-users, that gets people where they need to go. We are glad to meet our 
+                                            customers’ expectations, played a role in some region in the Eastern part of 
+                                            Nigeria and hope to continue to the journey. 
+                                        </div>
+                                        <div class="main-btn-div">
+                                            <button onclick="window.location.href='learnmore'">
+                                                Learn More <span class="glyphicon glyphicon-plus bg-ed"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                
+            </div>
+            <!--=== end of Home Section ===-->
+
+            <!--=== Our Story Section===-->
+            <div class="col-xs-12 pad0" id="our-story">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 pad0">
+                            <div class="col-xs-12 mtd text-center" style="margin-bottom: 10px">
+                                <h2 class="header-txt">Our Story</h2>
+                            </div>
+                            <div class="col-xs-12 black-txt">
+                                <h3>Samon Petroleum Limited “SPL” </h3>
+                                <p class="text-justify">
+                                    Samon Petroleum Limited “SPL” is a Nigerian based integrated Oil and Gas company with 
+                                    strategic interests in the West African downstream value chain cutting across trading, 
+                                    storage, marketing and distribution of petroleum products.
+                                </p>
+                                <p class="text-justify">
+                                    SPL was conceived and founded by a group of oil traders that recognized the need in the 
+                                    energy trading market for a responsible commodity trading company. We’re focused on 
+                                    providing high-quality fuels in West Africa at competitive prices. Over the last twenty years, 
+                                    SPL has imported and traded mainly gasoil, gasoline, dpk/jet A1 and all associated services.  
+                                    SPL also owns a storage facility in Calabar, Nigeria which was built with Department of 
+                                    Petroleum Resources specifications and API.
+                                </p>
+                                <p class="text-justify">
+                                    The Company’s primary asset is its ownership and operatorship of a 60 million litres terminal 
+                                    in the major commercial hub in the Southern Region of Nigeria – Calabar Free Trade Zone, 
+                                    Cross River State. This terminal has storage capacity for Mogas, Gasoil, JET and DPK and 
+                                    provides the platform through which SPL takes its trading positions across various refined 
+                                    petroleum products.
+                                </p>
+                                <p class="text-justify">
+                                    In addition to the storage and trading business, the Company owns several retail outlets 
+                                    primarily located across the Eastern region of Nigeria. These outlets provide additional 
+                                    channels for the distribution of the various refined products.SPL is midway through the 
+                                    construction of a state-of-the-art jetty facility in the Calabar Free Trade Zone and are 
+                                    poised to commence the construction of an LPG storage terminal.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--=== end of Our Story Section ===-->
+
+            <!--=== What We Do Section===-->
+            <div class="col-xs-12 pad0" id="what-we-do">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 pad0">
+                            <div class="col-xs-12 text-center mtd">
+                                <h2 class="header-txt">What We Are</h2>
+                                <p class="wwd-txt">
+                                    Samon Petroleum trades, stores, markets and distributes petroleum products primarily 
+                                    derived from crude oil and with all the associated services.
+                                </p>
+                            </div>
+                            <div class="col-xs-12 pad0-xs">
+                                <div class="col-xs-12 col-sm-4 pad0-xs">
+                                    <div class="col-xs-12">
+                                        <div class="card pull-left">
+                                            <img src="img/tb-img.JPG" alt="tb" style="width:100%">
+                                            <div class="col-xs-12 btt">
+                                                <h4><b>Trading Business</b></h4> 
+                                                <p class="card-txt">
+                                                    Samon Petroleum Limited “SPL” is a downstream company that strategic trades 
+                                                    gasoil, gasoline, dpk/jet A1 and in the nearest future hopes to also trade bitumen and 
+                                                    LPG products. SPL is poised to achieve its place amongst the leading indigenous downstream 
+                                                    companies. 
+                                                </p> 
+                                                <div class="col-xs-12 text-center lm-div"> 
+                                                    <button class="learn-more-btn" onclick="window.location.href='learnmore#tradingBusiness'">Learn More</button> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                                
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-4 pad0-xs">
+                                    <div class="col-xs-12">
+                                        <div class="card pull-left">
+                                            <img src="img/sf-img.JPG" alt="sf" style="width:100%">
+                                            <div class="col-xs-12 btt">
+                                                <h4><b>Storage Facilities</b></h4> 
+                                                <p class="card-txt">
+                                                    Samon Petroleum Limited “SPL” solely owns a storage facility in the Southern 
+                                                    Region of Nigeria- Calabar Free Trade Zone, Cross River State. The facilities 
+                                                    have 4 steel vertical storage tanks are designed to the API 650 and has a capacity 
+                                                    of approximately 50 million litres. 
+                                                </p> 
+                                                <div class="col-xs-12 text-center lm-div"> 
+                                                    <button class="learn-more-btn" onclick="window.location.href='learnmore#storagefacilities'">Learn More</button> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                                    
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-4 pad0-xs">
+                                    <div class="col-xs-12">
+                                        <div class="card pull-left">
+                                            <img src="img/jf-img2.jpg" alt="sjf" style="width:100%">
+                                            <div class="col-xs-12 btt">
+                                                <h4><b>Samon Jetty Facilities</b></h4> 
+                                                <p class="card-txt">
+                                                    SPL Jetty has the capacity of berthing and discharging up to 20,000-25,000 DWT vessels. 
+                                                    We offer throughput logistic and blending of businesses of various products such as LPG, 
+                                                    Bitumen and clean petroleum products through an extensive pipeline networks to reach over 
+                                                    35 depots within and outside the Free Trade Zone, Calabar.
+                                                </p> 
+                                                <div class="col-xs-12 text-center lm-div"> 
+                                                    <button class="learn-more-btn" onclick="window.location.href='learnmore#sjf'">Learn More</button> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                                    
+                                    </div>
+                                </div>
+
+                                <!-- <div class="col-sm-2"></div> -->
+
+                                <div class="col-xs-12 col-sm-6 pad0-xs">
+                                    <div class="col-xs-12">
+                                        <div class="card pull-left">
+                                            <img src="img/retail.png" alt="ro" style="width:100%">
+                                            <div class="col-xs-12 btt">
+                                                <h4><b>Retail Outlets</b></h4> 
+                                                <p class="card-txt">
+                                                    Over the years Samon Petroleum has been supplying quality fuel products to 
+                                                    end-users, that gets people where they need to go. We are glad to meet our 
+                                                    customers’ expectations, played a role in some region in the Eastern part of 
+                                                    Nigeria and hope to continue to the journey. 
+                                                </p> 
+                                                <div class="col-xs-12 text-center lm-div"> 
+                                                    <button class="learn-more-btn" onclick="window.location.href='learnmore#retailOutlets'">Learn More</button> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                                    
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-6 pad0-xs">
+                                    <div class="col-xs-12">
+                                        <div class="card pull-left">
+                                            <img src="img/ppd-img.JPG" alt="ppd" style="width:100%">
+                                            <div class="col-xs-12 btt">
+                                                <h4><b>Petroleum Product Depot</b></h4> 
+                                                <p class="card-txt">
+                                                    Samon Petroleum Limited depot is strategically located within the Free Trade Zone 
+                                                    in Calabar, there are seventeen depots within the zone and nine outside the zone.
+                                                    SPL loading arm operates using the Accuload III.net system, which can dispense 
+                                                    1,500 - 2,000 Litres per Minute on an average. Each product has its dedicated 
+                                                    line that is linked from the storage tanks to the loading dock and SPL’s Gantry 
+                                                    accommodates 20-25 trucks.
+                                                </p> 
+                                                <div class="col-xs-12 text-center lm-div"> 
+                                                    <button class="learn-more-btn" onclick="window.location.href='learnmore#ppd'">Learn More</button> 
+                                                    <!-- <button class="learn-more-btn" data-toggle="modal" data-target="#wwd5">Learn More</button>  -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--=== end of What We Do Section ===-->
+
+            <!--=== What We Value Section===-->
+            <div class="col-xs-12 pad0" id="what-we-value">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 pad0">
+                            <div class="col-xs-12 mtd" style="margin-bottom: 10px">
+                                <h2 class="header-txt text-center">What We Value</h2>
+                            </div>
+                            <div class="col-xs-12">
+                                <div class="col-xs-12 prg prg1 pad0">
+                                    <div class="col-xs-12 col-sm-4">
+                                        <img src="img/hse.JPG" alt="H.S.E Policy" class="">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8">
+                                        <div>
+                                            <h3>Health, Safety & Environment Policy (H.S.E Policy)</h3>
+                                            <p>
+                                                To increase our competitiveness and sustain our reputation, we are committed to the 
+                                                safe and efficient operation of our facilities. We have taken an uncompromising 
+                                                stand in the maintenance of high-quality standards in safety, security, health and 
+                                                environmental measures in all angles of our business and we demand same from our 
+                                                suppliers, contractors and other service providers. Our goal is to prevent all 
+                                                accidents, injuries and occupational illness and to protect the environment. 
+                                            </p>
+                                            <p>Below are just a few of the many safety measures taken:</p>
+                                            <ul>
+                                                <li>
+                                                    Our employees are responsible for observing all of the safety and health plans that apply 
+                                                    to their jobs.
+                                                </li>
+                                                <li>
+                                                    A proactive process focusing on increased safety awareness has been put in place to 
+                                                    help prevent accidents and injuries at our facilities.
+                                                </li>
+                                                <li>
+                                                    Each of us must promptly report unsafe or unhealthy conditions and immediately take 
+                                                    steps to correct those conditions.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 prg prg2 pad0">
+                                    <div class="col-xs-12 col-sm-4 visible-xs">
+                                        <img src="img/csr-img.JPG" alt="CSR" class="">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8">
+                                        <div>
+                                            <h3>Corporate Social Responsibility</h3>
+                                            <p>
+                                                SPL has continually supported the implementation of projects that are most 
+                                                relevant to our stakeholders and communities in which we live and work. SPL 
+                                                aims to supports quality education at the grassroots to the youth, school 
+                                                infrastructure development, capacity building and economic empowerment. We have 
+                                                developed a strategic relationship with the community leaders to assist/advance 
+                                                our reach.
+                                            </p>
+                                            <p>
+                                                Volunteering in the community: SPL and its employees volunteer and supports 
+                                                charitable organization and agencies in the local communities in form of 
+                                                foundation grants, sponsorship and corporate contributions. We are focus on 
+                                                giving to communities where the Company has employee’s presence.
+                                            </p>                                        
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4 hidden-xs">
+                                        <img src="img/csr-img.JPG" alt="CSR" class="">
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 prg prg3 pad0">
+                                    <div class="col-xs-12 col-sm-4">
+                                        <img src="img/sustain2.JPG" alt="Sustainability" class="">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8">
+                                        <div>
+                                            <h3>Sustainability</h3>
+                                            <p>
+                                                At SPL, sustainability is at the heart of everything we do, to us it means not harming the 
+                                                environment or depleting natural resources and supporting long-term ecological balance.
+                                            </p>
+                                            <p>
+                                                We at SPL aim to operate a responsible, safe and profitable business which involves getting 
+                                                the basic right. We believe keeping sustainability as the consistent substratum of our approach 
+                                                to doing business is not only right for society, human rights but also great for SPL’s success.
+                                            </p>      
+                                            <p>
+                                                SPL supports government agencies; environmental and community groups; and trade, professional 
+                                                and industry associations devoted to efforts that protect, conserve and sustain our environmental 
+                                                resources. These efforts may include clean-ups programs, educational programs, and research projects.
+                                            </p>                                  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--=== end of What We Do Section ===-->
+
+            <!--=== What Next Section===-->
+            <div class="col-xs-12 pad0" id="what-next">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 pad0">
+                            <div class="col-xs-12 mtd text-center" style="margin-bottom: 10px">
+                                <h2 class="header-txt">What Next</h2>
+                            </div>
+                            <div class="col-xs-12">
+                                <div class="col-xs-12 col-sm-6 wn-div">
+                                    <div class="col-xs-12 col-sm-10 col-sm-offset-1 s-wn-div pad0">
+                                        <img src="img/lpg.png" alt="tb" style="width:100%">
+                                        <div>
+                                            <h3 class="text-center"> Liquefied Petroleum Gas “LPG” plant </h3>
+                                            <p class="text-justify">
+                                                SPL has acquired a land space also at the Trade Free Zone in Calabar State for 
+                                                our proposed LGP plant. The Nigeria market is one of the highest consumers of cooking 
+                                                gas and that’s the sector we plan to invest in. <br>
+                                                On the long run venture into various form of natural gas such as 
+                                                Liquefied Natural Gas (LNG).
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-6 wn-div">
+                                    <div class="col-xs-12 col-sm-10 col-sm-offset-1 s-wn-div pad0">
+                                        <img src="img/bitumen.png" alt="tb" style="width:100%">
+                                        <div>
+                                            <h3 class="text-center"> Bitumen Plant </h3>
+                                            <p class="text-justify">
+                                                SPL is on the process of acquiring land for the construction of its bitumen 
+                                                plant in Free Trade Zone Calabar state. SPL hopes to be a market leader in 
+                                                trading and marketing bituminous products. <br> With the bitumen plant, this will 
+                                                help meet the challenges of road, roofing and airport sectors, alongside specialty 
+                                                and industrial applications.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--=== end of What Next Section ===-->
+
+            <!--=== Modals Section ===-->
+            <div id="wwd1" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!-- <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Modal Header</h4>
+                        </div> -->
+                        <div class="modal-body col-xs-12">
+                            <div class="col-xs-12 col-sm-4 wwd1-modal">
+                                <!-- <img src="img/wwd1.jpg" alt="img" class="f-width"> -->
+                            </div>
+                            <div class="col-xs-12 col-sm-8 black-txt">
+                                <h4 class="modal-title">Trading Business</h4>
+                                <p>
+                                    Samon Petroleum Limited “SPL” is a downstream company that strategic trades gasoil, gasoline, 
+                                    dpk/jet A1 and in the nearest future hopes to also trade bitumen and LPG products. SPL is 
+                                    poised to achieve its place amongst the leading indigenous downstream companies. 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="wwd2" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!-- <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Modal Header</h4>
+                        </div> -->
+                        <div class="modal-body col-xs-12">
+                            <div class="col-xs-12 col-sm-4 wwd2-modal">
+                                <!-- <img src="img/wwd2.jpg" alt="img" class="f-width"> -->
+                            </div>
+                            <div class="col-xs-12 col-sm-8 black-txt">
+                                <h4 class="modal-title">Storage Facilities</h4>
+                                <p>
+                                    Samon Petroleum Limited “SPL” solely owns a storage facility in the Southern Region of 
+                                    Nigeria- Calabar Free Trade Zone, Cross River State. The facilities have 4 steel vertical 
+                                    storage tanks are designed to the API 650 and has a capacity of approximately 50 million 
+                                    litres. 
+                                </p>
+                                <ul>
+                                    <li>Product Stored</li>
+                                    <li>Premium Motor Spirit (PMS)</li>
+                                    <li>Automotive Gas Oil (AGO) </li>
+                                    <li>Dual Purpose Kerosene (DPK) </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="wwd3" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!-- <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Modal Header</h4>
+                        </div> -->
+                        <div class="modal-body col-xs-12">
+                            <div class="col-xs-12 col-sm-4 wwd3-modal">
+                                <!-- <img src="img/wwd3.jpg" alt="img" class="f-width"> -->
+                            </div>
+                            <div class="col-xs-12 col-sm-8 black-txt">
+                                <h4 class="modal-title">Samon Jetty Facilities</h4>
+                                <p>
+                                    SPL Jetty has the capacity of berthing and discharging up to 20,000-25,000 DWT vessels. 
+                                    We offer throughput logistic and blending of businesses of various products such as LPG, 
+                                    Bitumen and clean petroleum products through an extensive pipeline networks to reach over 35 
+                                    depots within and outside the Free Trade Zone, Calabar.
+                                </p>
+                                <p>
+                                    SPL Jetty will operate 24/7 and it is equipped with a world-class security system that 
+                                    enables monitoring of the jetty round the clock. With its state-of-the-art security and 
+                                    features such as fire monitors, firefighting pumps, etc.
+                                </p>
+                                <p>
+                                    Our jetty is strategically located at Free Trade Zone, with a wide road that allows easy 
+                                    access to various depots. The distance between the jetty and our depot is about 1.9 KM, 
+                                    which puts us at a great advantage, increases the utilization of existing storage and 
+                                    allows proper time management.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="wwd4" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!-- <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Modal Header</h4>
+                        </div> -->
+                        <div class="modal-body col-xs-12">
+                            <div class="col-xs-12 col-sm-4 wwd4-modal">
+                                <!-- <img src="img/wwd4.jpg" alt="img" class="f-width"> -->
+                            </div>
+                            <div class="col-xs-12 col-sm-8 black-txt">
+                                <h4 class="modal-title">Retail Outlets</h4>
+                                <p>
+                                    Over the years Samon Petroleum has been supplying quality fuel products to end-users, 
+                                    that gets people where they need to go. We are glad to meet our customers’ expectations, 
+                                    played a role in some region in the Eastern part of Nigeria and hope to continue to the 
+                                    journey.  
+                                </p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="wwd5" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!-- <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Modal Header</h4>
+                        </div> -->
+                        <div class="modal-body col-xs-12">
+                            <div class="col-xs-12 col-sm-4 wwd5-modal">
+                                <!-- <img src="img/wwd5.jpg" alt="img" class="f-width"> -->
+                            </div>
+                            <div class="col-xs-12 col-sm-8 black-txt">
+                                <h4 class="modal-title">Petroleum Product Depot</h4>
+                                <p>
+                                Samon Petroleum Limited depot is strategically located within the Free Trade Zone in 
+                                Calabar, there are seventeen depots within the zone and nine outside the zone
+                                </p>
+                                <p>
+                                    SPL loading arm operates using the Accuload III.net system, which can dispense 
+                                    1,500 - 2,000 Litres per Minute on an average. Each product has its dedicated line 
+                                    that is linked from the storage tanks to the loading dock and SPL’s Gantry 
+                                    accommodates 20-25 trucks.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--=== end of Modals Section ===-->
+
+        </div>
+        
+        <!--=== Footer ===-->
+        <footer class="col-xs-12 pad0" id="footer">
+            <div class="col-sm-8 col-sm-offset-2 col-xs-12 text-center career-notice">
+                <h4>EXPLORE CAREER OPPORTUNITIES</h4>
+                <p class="">
+                    As a fast-growing energy industry leader, we hire exceptional people with the passion to make a difference, 
+                    to hit the ground running, take on new challenges, and generate innovative ideas with enthusiasm to succeed 
+                    and grow with us. <br> <br>
+                    Please e-mail your resume to <a href="mailto:careers@samonpetroleum.com">careers@samonpetroleum.com</a>
+                </p>
+                <div class="main-btn-div">
+                    <button onclick="window.location.href = 'career'">
+                        Apply Now <span class="glyphicon glyphicon-plus bg-ed"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2 cttt" style="margin-bottom: 20px;">
+                <hr class="footer-hr">
+            </div>
+
+            <div class="footer container">
+                <div class="col-xs-12 col-sm-3 footer-sec">
+                    <div class="col-xs-12 ">
+                        <div class="text-center">
+                            <a href="/"><img src="img/logo2.png" alt="SPL" class="footer-logo"></a> <br>
+                            <span class="dd">Samon Petroleum Limited</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-3 footer-sec">
+                    <div class="col-xs-12 ">
+                        <h3>Contact</h3>
+                        <div>
+                            <b> Samon Petroleum. Plot D14A, Calabar Free Trade Zone, Calabar. </b> <br>
+                            <span><a href="mailto:info@samonpetroleum.com">info@samonpetroleum.com</a></span> <br><br>
+                            <span>
+                                <a href="tel:+2348065112943">+234 (0)806 511 2943</a>
+                                <!-- <br> <a href="tel:+2348122219260">+234 (0)812 221 9260</a> -->
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-2 footer-sec">
+                    <div class="col-xs-12 ">
+                        <h3>Navigation</h3>
+                        <ul class="no-dots pad0">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="career">Career</a></li>
+                            <li><a href="contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-2 footer-sec">
+                    <div class="col-xs-12 ">
+                        <h3>Legal</h3>
+                        <ul class="no-dots pad0">
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-2 footer-sec">
+                    <div class="col-xs-12 ">
+                        <h3>Follow Us</h3>
+                        <ul class="no-dots pad0">
+                            <li>
+                                <a href="#"> Facbook</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Instagram</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Twitter</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Linkedin</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+
+            </div>
+
+            <div class="col-xs-12 footer-bar">
+                <div class="col-xs-12">
+                    <div class="col-xs-12 text-center" style="line-height: 4">Copyright &copy; 2019 Samon Petroleum. <span class="hidden-xs">All rights Reserved</span></div>
+                </div>
+            </div>
+
+        </footer>
+
+        <!--=== end of Footer ===-->
+    </div>
+
+    <!-- Scripts-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $(".navbar-fixed-top");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
+
+        var loader;
+        function loadFunction() {
+            loader = setTimeout(showPage, 10000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("content").style.display = "block";
+        }
+
+        // $(window).load(function() {
+        //     // Animate loader off screen
+        //     $("#loader").fadeOut("slow");;
+        // });
+
+        var actvCarousel= $('#myCarousel .item.active').index() 
+
+        $(document).ready(function(){
+            $('#overlay-menu').hide();
+        });
+        $('.open-hidden-nav').click(function(){
+            $('#overlay-menu').slideDown();
+        });
+        $('.om-close').click(function(){
+            $('#overlay-menu').slideUp();
+        });
+    </script>
+
+	</body>
+
+</html>
+
+</html>
